@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Rehabilitation"
+             x:Class="Rehabilitation.MainPage"
+             BackgroundColor="White">
+
+
+
+        <ContentPage.Content>
+            <StackLayout>
+                <StackLayout.Children>
+                <Image Source="mainImage.png"
+                        HorizontalOptions="Center"/>
+                <Label Text="Логин:"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Margin="0,50,0,0"/>
+
+                <Entry x:Name="enLog"
+                       WidthRequest="1000"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+                <Label Text="Пароль:"
+                    FontAttributes="Bold"
+                    FontSize="30"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"/>
+
+                <Entry x:Name="enPass"
+                       IsPassword="True"
+                       WidthRequest="1000"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+                <Label x:Name="LoginError" 
+                       
+                    Text="Неверный логин или пароль"
+                    TextColor="Red"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    IsVisible="False"/>
+                <Button
+                    BackgroundColor="White"
+                      Image="login.png"
+                      HorizontalOptions="Center"
+                      VerticalOptions="Center"
+                      Clicked="btSingIn_Clicked" 
+                      Margin="0,50,0,0"
+                      />
+                    
+                <Button 
+                    BackgroundColor="White"
+                      Image="singup.png"
+                      HorizontalOptions="Center"
+                      VerticalOptions="Center"
+                      Clicked="btSingUp_Clicked" 
+                      />
+                </StackLayout.Children>
+            </StackLayout>
+        </ContentPage.Content>
+
+</ContentPage>

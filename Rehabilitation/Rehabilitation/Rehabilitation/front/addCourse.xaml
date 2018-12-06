@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Rehabilitation.addCourse"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Название курса:"
+                    FontSize="18" 
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"/>
+
+            <Entry x:Name="courseName"
+                       WidthRequest="1000"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+
+            <Label Text="Продолжительность курса:"
+                    FontSize="18" 
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"/>
+
+            <Entry x:Name="numDays"
+                       WidthRequest="1000"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+
+            <Label Text="Количество упражнений:"
+                    FontSize="18" 
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"/>
+
+            <Entry x:Name="numExercises"
+                       WidthRequest="1000"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+
+            <Label Text="Угол наклона:"
+                    FontSize="18" 
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"/>
+
+            <Entry x:Name="angle"
+                       WidthRequest="1000"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+
+            <Button   Image="add.png"
+                      HorizontalOptions="Center"
+                      VerticalOptions="Center"
+                      Clicked="btAddCourse" 
+                      BackgroundColor="White"
+                      Margin="0,100,0,0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

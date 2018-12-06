@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Rehabilitation.courseInfo"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name ="lbNameCourse" Text="Название курса:"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Margin="0,30,0,0"/>
+            <Label x:Name ="lbNumDaysCourse" Text="Продолжительность курса:"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Margin="0,30,0,0"/>
+            <Label x:Name ="lbNumExercisesCourse" Text="Количество упражнений:"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Margin="0,30,0,0"/>
+            <Label x:Name ="lbAngleCourse" Text="Угол наклона:"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Margin="0,30,0,0"
+                   />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

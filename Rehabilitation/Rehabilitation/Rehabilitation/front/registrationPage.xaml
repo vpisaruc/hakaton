@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Rehabilitation.registrationPage"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.Children>
+                <Label Text="ФИО:"
+                    FontSize="18" 
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"/>
+
+                <Entry x:Name="enFIO"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" 
+                       WidthRequest="1000"/>
+                <Label Text="Логин:"
+                    FontSize="18" 
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"/>
+                <Entry x:Name="enLogin"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" 
+                       WidthRequest="1000"/>
+                <Label Text="Пароль:"
+                    FontSize="18" 
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"/>
+                <Entry x:Name="enPass"
+                       IsPassword="True"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       WidthRequest="1000"/>
+                <Label Text="Повторите пароль:"
+                    FontSize="18" 
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"/>
+                <Entry x:Name="enReentryPass"
+                       IsPassword="True"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" 
+                       WidthRequest="1000"/>
+                
+                <Label Text="Выберите категорию пользователя."
+                    FontSize="18" 
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"/>
+
+                <Picker x:Name="pickUser"
+                        SelectedIndex="1">
+                    <Picker.Items >
+                        <x:String>Врач</x:String>
+                        <x:String>Пациент</x:String>
+                    </Picker.Items>
+                </Picker >
+                <Label x:Name="LoginError" 
+                    Text="Ввведенный логин занят."
+                    TextColor="Red"   
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    IsVisible="False"/>
+                <Label x:Name="PassError"
+                    TextColor="Red"   
+                    Text="Пароли несовпадают."
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    IsVisible="False"/>
+                <Button Image="register.png"
+                    BackgroundColor="White"
+                      HorizontalOptions="Center"
+                      VerticalOptions="CenterAndExpand" 
+                      Clicked="btnReg_Clicked"/>
+
+            </StackLayout.Children>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

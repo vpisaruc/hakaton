@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:TabbedPageWithNavigationPage;assembly=TabbedPageWithNavigationPage"
+            x:Class="Rehabilitation.enterPagePatient"
+            BackgroundColor="White">
+
+    <ContentPage Title="Профайл">
+        <ContentPage.Content>
+            <StackLayout>
+                <StackLayout.Children>
+
+                    <Label Text="ФИО:"
+                            FontSize="18" 
+                            FontAttributes="Bold"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"/>
+
+                    <Entry x:Name="getFIOClient"
+                           WidthRequest="1000"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+
+                    <Label Text="Email:"
+                            FontSize="18" 
+                            FontAttributes="Bold"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"/>
+
+                    <Entry x:Name="getEmailClient"
+                           WidthRequest="1000"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+
+                    <Label Text="Телефон:"
+                            FontSize="18" 
+                            FontAttributes="Bold"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"/>
+
+                    <Entry x:Name="getTelephoneClient"
+                           WidthRequest="1000"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+
+                    <Label Text="Пол:"
+                            FontSize="18" 
+                            FontAttributes="Bold"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"/>
+
+                    <Picker x:Name="pickSexClient"
+                            SelectedIndex="1"
+                            FontSize="18" 
+                            FontAttributes="Bold">
+                        <Picker.Items >
+                            <x:String>Мужской</x:String>
+                            <x:String>Женский</x:String>
+                        </Picker.Items>
+                    </Picker >
+
+
+                    <Label Text="Возраст:"
+                            FontSize="18" 
+                            FontAttributes="Bold"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"/>
+
+                    <Entry x:Name="enAgeClient"
+                            WidthRequest="1000"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+
+                    <Label x:Name="lbIDClient" 
+                            Text="ID: "
+                            FontSize="18" 
+                            FontAttributes="Bold"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"/>
+
+                    <Button Image="change.png"
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand" 
+                            BackgroundColor="White"/>
+
+                </StackLayout.Children>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Упражнение">
+        <ContentPage.Content>
+            <StackLayout>
+                <StackLayout.Children>
+                    <Label x:Name="lbAngle" 
+                           Text="Количество повторений:"
+                           FontSize="30"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
+                    <Button x:Name="butStart"
+                              IsVisible="True"
+                              Image="start.png"
+                              BackgroundColor="White"
+                              Clicked="butStart_Clicked"/>
+                    <Button x:Name="butStop"
+                              IsVisible="False"
+                              Image="stop.png"
+                              BackgroundColor="White"
+                              HorizontalOptions="Center"
+                              Clicked="butStop_Clicked"
+                              VerticalOptions="CenterAndExpand" />
+                </StackLayout.Children>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Курс">
+        <ContentPage.Content>
+            <StackLayout>
+                <StackLayout.Children>
+                    <Label x:Name ="lbNameCourse" Text="Название курса:"
+                            FontSize="20"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            Margin="0,30,0,0"/>
+                    <Label x:Name ="lbNumDaysCourse" Text="Продолжительность курса:"
+                            FontSize="20"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            Margin="0,30,0,0"/>
+                    <Label x:Name ="lbNumExercisesCourse" Text="Количество упражнений:"
+                            FontSize="20"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            Margin="0,30,0,0"/>
+                    <Label x:Name ="lbAngleCourse" Text="Угол наклона:"
+                            FontSize="20"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            Margin="0,30,0,0"/>
+                    <Button x:Name="butInfo"
+                              Image="info.png"
+                              BackgroundColor="White"
+                              HorizontalOptions="Center"
+                              Clicked="butInfo_Clicked"
+                              VerticalOptions="CenterAndExpand" />
+                </StackLayout.Children>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+
+</TabbedPage>
